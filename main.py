@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
 import re
 from bs4 import BeautifulSoup
 import time
-import os
-GENIUS_API_TOKEN = os.getenv("GENIUS_API_TOKEN")
 import streamlit as st
 
 GENIUS_API_TOKEN = "JSLMPXLnxdorfrJC1tNkdZ_CZz2DsfuFYhAitw2FW8Q_PzysQFeh6qUpAi7G7xsP"
