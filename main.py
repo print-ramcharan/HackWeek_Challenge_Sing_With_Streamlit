@@ -7,6 +7,9 @@ from bs4 import BeautifulSoup
 import time
 import os
 GENIUS_API_TOKEN = os.getenv("GENIUS_API_TOKEN")
+import streamlit as st
+
+GENIUS_API_TOKEN = st.secrets["GENIUS_API_TOKEN"]
 
 
 
