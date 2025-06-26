@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import time
 
 # ---------------- Configuration ----------------
-GENIUS_API_TOKEN = "JSLMPXLnxdorfrJC1tNkdZ_CZz2DsfuFYhAitw2FW8Q_PzysQFeh6qUpAi7G7xsP"
+GENIUS_API_TOKEN = ""
 
 # Demo fallback lyrics
 demo_lyrics = {
