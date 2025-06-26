@@ -9,7 +9,7 @@ import os
 GENIUS_API_TOKEN = os.getenv("GENIUS_API_TOKEN")
 import streamlit as st
 
-GENIUS_API_TOKEN = st.secrets["GENIUS_API_TOKEN"]
+GENIUS_API_TOKEN = "JSLMPXLnxdorfrJC1tNkdZ_CZz2DsfuFYhAitw2FW8Q_PzysQFeh6qUpAi7G7xsP"
 
 
 
