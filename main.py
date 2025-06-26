@@ -5,9 +5,11 @@ import matplotlib.pyplot as plt
 import re
 from bs4 import BeautifulSoup
 import time
+import streamlit as st
 
-# ---------------- Configuration ----------------
-GENIUS_API_TOKEN = "Your api key here"
+GENIUS_API_TOKEN = st.secrets["GENIUS_API_TOKEN"]
+
+
 
 # Demo fallback lyrics
 demo_lyrics = {
@@ -19,7 +21,6 @@ See you make your way through the crowd and say \"Hello\"
 Little did I know..."""
 }
 
-# ---------------- Genius API Helpers ----------------
 def get_song_path(title):
     headers = {'Authorization': f'Bearer {GENIUS_API_TOKEN}'}
     response = requests.get(f"https://api.genius.com/search?q={title}", headers=headers).json()
@@ -57,7 +58,6 @@ def get_lyrics(url):
     cleaned = [re.sub(r"\[.*?\]", "", l) for l in lyrics_lines if l]
     return "\n".join(cleaned).strip() if cleaned else None
 
-# ---------------- Word Cloud Generator ----------------
 def generate_wordcloud(text):
     if not text or not isinstance(text, str):
         st.warning("Lyrics are empty or invalid. Cannot generate word cloud.")
