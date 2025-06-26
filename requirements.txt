@@ -1,4 +1,5 @@
 streamlit
 requests
-wordcloud
+beautifulsoup4
 matplotlib
+wordcloud
